@@ -51,7 +51,7 @@ class Creator:
         self.texts_path = os.path.join(data_dir, 'texts.jsonl')
         config_path = os.path.join(data_dir, 'version.json')
         
-        # Freeze the current configuration of the Embeddings Creator.
+        # Freeze the current configuration of the Creator.
         config = {
             'data_version' : DATA_VERSION,
             'model' : self.model_name,
@@ -70,7 +70,7 @@ class Creator:
             if not os.path.exists(file):
                 with open(file, 'wb') as _: pass
         
-        # Store the current configuration of the Embeddings Creator.
+        # Store the current configuration of the Creator.
         save_json(config_path, config)
         
     def create(self) -> None:
