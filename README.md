@@ -3,9 +3,6 @@ The [Open Australian Legal Embeddings](https://huggingface.co/datasets/umarbutle
 
 If you're looking to download the Embeddings, you may do so on [Hugging Face](https://huggingface.co/datasets/umarbutler/open-australian-legal-embeddings).
 
-## Requirements
-The Open Australian Legal Embeddings Creator requires Python 3.10 or higher.
-
 ## Installation
 To install the Creator, run the following commands:
 ```bash
