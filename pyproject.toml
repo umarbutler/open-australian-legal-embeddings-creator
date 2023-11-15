@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "oale-creator"
+version = "1.0.0"
+authors = [
+  {name="Umar Butler", email="umar@umar.au"},
+]
+description = "The creator of the Open Australian Legal Embeddings"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text="MIT"}
+keywords = [
+    "law",
+    "australia",
+    "australian",
+    "legal",
+    "oalc",
+    "oale",
+    "open",
+    "open data",
+    "open source",
+    "open legal data",
+    "embeddings",
+    "ai",
+    "ml",
+    "nlp",
+    "machine learning",
+    "natural language processing",
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+dependencies = [
+    "click",
+    "mpire",
+    "orjson",
+    "orjsonl",
+    "rich",
+    "semchunk",
+    "sentence_transformers",
+    "tqdm",
+    "transformers",
+]
+
+[project.urls]
+Homepage = "https://github.com/umarbutler/open-australian-legal-embeddings-creator"
+Documentation = "https://github.com/umarbutler/open-australian-legal-embeddings-creator/blob/main/README.md"
+Issues = "https://github.com/umarbutler/open-australian-legal-embeddings-creator/issues"
+Source = "https://github.com/umarbutler/open-australian-legal-embeddings-creator"
+
+[project.scripts]
+mkoale = "oale_creator.cli:create"
