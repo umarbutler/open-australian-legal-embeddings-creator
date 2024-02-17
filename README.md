@@ -6,9 +6,7 @@ If you're looking to download the Embeddings, you may do so on [Hugging Face](ht
 ## Installation
 To install the Creator, run the following commands:
 ```bash
-git clone https://github.com/umarbutler/open-australian-legal-embeddings-creator.git
-cd open-australian-legal-embeddings-creator
-pip install .
+pip install git+https://github.com/umarbutler/open-australian-legal-embeddings-creator
 ```
 
 ## Usage
